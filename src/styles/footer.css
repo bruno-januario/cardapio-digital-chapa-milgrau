@@ -1,0 +1,56 @@
+.site-footer {
+  background: var(--brand-black);
+  color: var(--muted-text);
+  padding: clamp(2rem, 5vw, 3rem) 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(110px, 20vw, 170px);
+}
+
+.footer-logo {
+  width: 100%;
+}
+
+.footer-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.5;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.footer-copy p {
+  margin: 0;
+}
+
+.footer-copy a {
+  color: var(--title-light);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-copy {
+    max-width: 42rem;
+  }
+}

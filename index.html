@@ -1,36 +1,93 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cardápio | Chapa Milgrau</title>
+    <meta
+      name="description"
+      content="Cardápio digital da Chapa Milgrau com lanches, sopas e bebidas."
+    />
+    <title>Chapa Milgrau | Cardápio Digital</title>
     <script type="module" src="/src/main.ts" defer></script>
   </head>
   <body>
-    <!-- Cabeçalho (Logo + Pequena Mensagem + Botões c/ âncoras) -->
-    <header id="header">
+    <header class="site-header" id="header">
+      <div class="header-overlay"></div>
+      <div class="container header-content">
+        <div class="brand-wrap" aria-label="Logo Chapa Milgrau">
+          <img
+            class="brand-logo"
+            src="/images/logo.png"
+            alt="Logo da Chapa Milgrau"
+          />
+        </div>
 
+        <p class="header-tagline">Sabor de rua, tradição e energia em cada mordida.</p>
+
+        <nav class="header-nav" aria-label="Navegação do cardápio">
+          <a class="nav-link nav-lanches" href="#fast-food">Lanches</a>
+          <a class="nav-link nav-sopas" href="#soup">Sopas</a>
+          <a class="nav-link nav-bebidas" href="#beverages">Bebidas</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- Container Principal (cardápio injetado via JavaScript)-->
-    <main id="menu">
-      <section id="fast-food">
-
+    <main class="menu-page" id="menu">
+      <section class="menu-section" id="fast-food" aria-labelledby="fast-food-title">
+        <div class="section-header container">
+          <div class="section-copy">
+            <p class="section-kicker">Categoria</p>
+            <h2 id="fast-food-title">Lanches</h2>
+          </div>
+        </div>
+        <div class="section-placeholder container" aria-label="Seção de lanches em desenvolvimento">
+          Conteúdo dos lanches será renderizado nesta área na próxima etapa.
+        </div>
       </section>
 
-      <section id="soup">
-        
+      <section class="menu-section" id="soup" aria-labelledby="soup-title">
+        <div class="section-header container">
+          <div class="section-copy">
+            <p class="section-kicker">Categoria</p>
+            <h2 id="soup-title">Sopas</h2>
+          </div>
+        </div>
+        <div class="section-placeholder container" aria-label="Seção de sopas em desenvolvimento">
+          Conteúdo das sopas será renderizado nesta área na próxima etapa.
+        </div>
       </section>
 
-      <section id="beverages">
-        
+      <section class="menu-section" id="beverages" aria-labelledby="beverages-title">
+        <div class="section-header container">
+          <div class="section-copy">
+            <p class="section-kicker">Categoria</p>
+            <h2 id="beverages-title">Bebidas</h2>
+          </div>
+        </div>
+        <div class="section-placeholder container" aria-label="Seção de bebidas em desenvolvimento">
+          Conteúdo das bebidas será renderizado nesta área na próxima etapa.
+        </div>
       </section>
     </main>
 
-    <!-- Rodapé (Logo pequena + Mensagem de copyright + Créditos de desenvolvimento + Redes sociais)-->
-    <footer id="footer">
+    <footer class="site-footer" id="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img class="footer-logo" src="/images/logo.png" alt="Logo da Chapa Milgrau" />
+        </div>
 
+        <div class="footer-copy">
+          <p>© 2025 Chapa Milgrau. Todos os direitos reservados.</p>
+          <p>
+            Rua Marcos Alexandre, esquina com Av. Abílio Augusto Távora, S/Nº —
+            Valverde, Nova Iguaçu - RJ, CEP 26290-660.
+          </p>
+          <p>
+            Desenvolvido por
+            <a href="#" aria-label="Perfil do desenvolvedor Bruno Januário">Bruno Januário</a>
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

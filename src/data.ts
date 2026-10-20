@@ -1,18 +1,18 @@
-interface Product {
+export interface Product {
     name: string,
     description: string,
     picture: string, /* Caminho para a imagem */
     price?: number
 }
 
-interface Soup extends Product {
+export interface Soup extends Product {
     priceP: 11,
     priceM: 14,
     priceG: 16,
     priceGG: 22
 }
 
-const fastFood: Product[] = [
+export const fastFood: Product[] = [
     {
         name: 'X-Tudo',
         description: 'Pão, carne, queijo, presunto, bacon, ovo, tomate, alface, milho, ervilha, batata palha, queijo ralado, ketchup, maionese, molho verde e mostarda.',
@@ -57,7 +57,7 @@ const fastFood: Product[] = [
     }
 ]
 
-const soapFood: Soup[] = [
+export const soapFood: Soup[] = [
     {
         name: 'Mocotó',
         description: 'Mocotó, batata, cenoura, linguiça, bacon, azeitona e temperos.',
@@ -96,7 +96,7 @@ const soapFood: Soup[] = [
     }
 ]
 
-const beverages: Product[] = [
+export const beverages: Product[] = [
     {
         name: 'Guaracamp (natural, maracujá e açaí)',
         description: 'Refresco de guaraná carioca.',
