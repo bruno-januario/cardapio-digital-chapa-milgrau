@@ -86,6 +86,30 @@
       </section>
     </main>
 
+    <dialog
+      class="product-dialog"
+      id="product-dialog"
+      aria-labelledby="product-dialog-title"
+      aria-describedby="product-dialog-description"
+    >
+      <div class="product-dialog-content">
+        <button
+          class="product-dialog-close"
+          type="button"
+          aria-label="Fechar descrição"
+          data-dialog-close
+        >
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+        <p class="product-dialog-kicker">Descrição do produto</p>
+        <h2 class="product-dialog-title" id="product-dialog-title"></h2>
+        <p
+          class="product-dialog-description"
+          id="product-dialog-description"
+        ></p>
+      </div>
+    </dialog>
+
     <footer class="site-footer" id="footer">
       <div class="container footer-content">
         <div class="footer-brand">

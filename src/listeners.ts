@@ -1,19 +1,40 @@
 export function attachProductInteractions(): void {
-  const cards = document.querySelectorAll<HTMLElement>(".menu-card")
+  const dialog = document.querySelector<HTMLDialogElement>("#product-dialog")
+  const title = dialog?.querySelector<HTMLElement>("#product-dialog-title")
+  const description = dialog?.querySelector<HTMLElement>(
+    "#product-dialog-description"
+  )
+  const closeButton = dialog?.querySelector<HTMLButtonElement>(
+    "[data-dialog-close]"
+  )
+
+  if (!dialog || !title || !description || !closeButton) {
+    throw new Error("Não foi possível inicializar o modal de descrição.")
+  }
+
+  const cards = document.querySelectorAll<HTMLButtonElement>(".menu-card")
 
   cards.forEach((card) => {
-    const toggleSelection = () => {
-      cards.forEach((item) => {
-        item.classList.toggle("is-selected", item === card)
-      })
-    }
+    card.addEventListener("click", () => {
+      const { name, description: productDescription } = card.dataset
 
-    card.addEventListener("click", toggleSelection)
-    card.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault()
-        toggleSelection()
+      if (!name || !productDescription) {
+        throw new Error("O card não contém os dados do produto.")
       }
+
+      title.textContent = name
+      description.textContent = productDescription
+      dialog.showModal()
     })
+  })
+
+  closeButton.addEventListener("click", () => {
+    dialog.close()
+  })
+
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) {
+      dialog.close()
+    }
   })
 }

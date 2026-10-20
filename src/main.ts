@@ -73,6 +73,8 @@ function renderMenuCard(product: Product, includePrice = true): HTMLButtonElemen
   card.type = "button"
   card.className = "menu-card"
   card.setAttribute("aria-label", `Ver descrição de ${product.name}`)
+  card.setAttribute("aria-haspopup", "dialog")
+  card.setAttribute("aria-controls", "product-dialog")
 
   const title = document.createElement("span")
   title.className = "product-name"
@@ -119,4 +121,3 @@ for (const { key, items } of sectionConfigurations) {
 }
 
 attachProductInteractions()
-
