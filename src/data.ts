@@ -51,9 +51,9 @@ export const fastFood: Product[] = [
     },
     {
         name: 'Hambúrguer (Kids)',
-        description: 'Pão, 2 carnes, 2 queijos, 2 presuntos, 2x mais bacon que o X-Tudo, tomate, alface, milho, ervilha, batata palha, queijo ralado, ketchup, maionese, molho verde e mostarda.',
+        description: 'Pão, carne, queijo, presunto, batata palha e ketchup.',
         picture: '/images/xduplo.png',
-        price: 20
+        price: 9
     }
 ]
 
