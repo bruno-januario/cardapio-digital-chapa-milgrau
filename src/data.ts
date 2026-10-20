@@ -9,7 +9,7 @@ export interface Soup extends Product {
     priceP: 11,
     priceM: 14,
     priceG: 16,
-    priceGG: 22
+    priceGG: 23
 }
 
 export const fastFood: Product[] = [
@@ -65,7 +65,7 @@ export const soapFood: Soup[] = [
         priceP: 11,
         priceM: 14,
         priceG: 16,
-        priceGG: 22
+        priceGG: 23
     },
     {
         name: 'Angu à baiana',
@@ -74,7 +74,7 @@ export const soapFood: Soup[] = [
         priceP: 11,
         priceM: 14,
         priceG: 16,
-        priceGG: 22
+        priceGG: 23
     },
     {
         name: 'Estrogonofe',
@@ -83,7 +83,7 @@ export const soapFood: Soup[] = [
         priceP: 11,
         priceM: 14,
         priceG: 16,
-        priceGG: 22
+        priceGG: 23
     },
     {
         name: 'Sopa de Ervilha',
@@ -92,7 +92,7 @@ export const soapFood: Soup[] = [
         priceP: 11,
         priceM: 14,
         priceG: 16,
-        priceGG: 22
+        priceGG: 23
     }
 ]
 
