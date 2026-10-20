@@ -6,17 +6,20 @@
   align-items: center;
   justify-content: center;
   min-height: clamp(280px, 38vw, 520px);
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.56)),
-    radial-gradient(circle at center, rgba(255, 123, 54, 0.32), transparent 60%),
-    linear-gradient(135deg, #1c0d09, #3b0a06 32%, #111315 100%);
+  background-color: #111315;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+    url("/images/header-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
 .header-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(219, 52, 3, 0.18), rgba(0, 0, 0, 0.12));
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .header-content {
@@ -55,8 +58,9 @@
 
 .header-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 0.8rem;
   width: 100%;
 }
@@ -64,24 +68,44 @@
 .nav-link {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-width: clamp(120px, 22vw, 170px);
-  padding: 0.8rem 1.1rem;
+  justify-content: space-between;
+  width: min(100%, 20rem);
+  min-height: 54px;
+  padding: 0.8rem 1.25rem;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   box-shadow: var(--shadow-soft);
   color: var(--title-light);
   font-family: "Oswald", sans-serif;
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-size: clamp(1.05rem, 2.5vw, 1.3rem);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.nav-link-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.nav-link-label .fa-solid {
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+}
+
+.nav-link-arrow {
+  font-size: clamp(1.05rem, 2.5vw, 1.3rem);
 }
 
 .nav-link:hover,
 .nav-link:focus-visible {
   transform: translateY(-2px);
   filter: brightness(1.06);
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid var(--title-light);
+  outline-offset: 3px;
 }
 
 .nav-lanches {
@@ -102,6 +126,12 @@
   }
 
   .header-nav {
+    flex-direction: row;
     max-width: 42rem;
+  }
+
+  .nav-link {
+    flex: 1;
+    width: auto;
   }
 }

@@ -7,6 +7,10 @@
       name="description"
       content="Cardápio digital da Chapa Milgrau com lanches, sopas e bebidas."
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>Chapa Milgrau | Cardápio Digital</title>
     <script type="module" src="/src/main.ts" defer></script>
   </head>
@@ -22,12 +26,30 @@
           />
         </div>
 
-        <p class="header-tagline">Sabor de rua, tradição e energia em cada mordida.</p>
+        <p class="header-tagline">Confira nosso cardápio abaixo!</p>
 
         <nav class="header-nav" aria-label="Navegação do cardápio">
-          <a class="nav-link nav-lanches" href="#fast-food">Lanches</a>
-          <a class="nav-link nav-sopas" href="#soup">Sopas</a>
-          <a class="nav-link nav-bebidas" href="#beverages">Bebidas</a>
+          <a class="nav-link nav-lanches" href="#fast-food">
+            <span class="nav-link-label">
+              <i class="fa-solid fa-burger" aria-hidden="true"></i>
+              <span>Lanches</span>
+            </span>
+            <i class="fa-solid fa-arrow-right nav-link-arrow" aria-hidden="true"></i>
+          </a>
+          <a class="nav-link nav-sopas" href="#soup">
+            <span class="nav-link-label">
+              <i class="fa-solid fa-bowl-food" aria-hidden="true"></i>
+              <span>Sopas</span>
+            </span>
+            <i class="fa-solid fa-arrow-right nav-link-arrow" aria-hidden="true"></i>
+          </a>
+          <a class="nav-link nav-bebidas" href="#beverages">
+            <span class="nav-link-label">
+              <i class="fa-solid fa-glass-water" aria-hidden="true"></i>
+              <span>Bebidas</span>
+            </span>
+            <i class="fa-solid fa-arrow-right nav-link-arrow" aria-hidden="true"></i>
+          </a>
         </nav>
       </div>
     </header>
