@@ -32,8 +32,13 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.footer-copy p {
+.footer-copy p,
+.footer-copy address {
   margin: 0;
+}
+
+.footer-copy address {
+  font-style: normal;
 }
 
 .footer-copy a {
