@@ -84,13 +84,23 @@ function renderMenuCard(product: Product, includePrice = true): HTMLButtonElemen
 
   const hint = document.createElement("span")
   hint.className = "product-hint"
-  hint.textContent = "clique para ver a descrição"
+  hint.textContent = "Clique para ver a descrição"
+
+  const image = document.createElement("img")
+  image.className = "product-picture"
+  image.src = product.picture
+  image.alt = product.name
+
+  const content = document.createElement("div")
+  content.className = "product-card-content"
 
   if (detail) {
-    card.append(title, detail, hint)
+    content.append(title, detail, hint)
   } else {
-    card.append(title, hint)
+    content.append(title, hint)
   }
+
+  card.append(image, content)
 
   card.dataset.name = product.name
   card.dataset.description = product.description

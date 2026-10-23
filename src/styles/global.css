@@ -50,7 +50,7 @@ select {
 }
 
 .container {
-  width: min(100% - 1.5rem, var(--content-max));
+  width: min(100% - 2.4rem, var(--content-max));
   margin: 0 auto;
 }
 
