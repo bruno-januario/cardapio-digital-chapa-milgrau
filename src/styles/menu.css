@@ -41,6 +41,17 @@
   gap: 1rem;
 }
 
+@media (min-width: 435px) and (max-width: 614px) {
+  .menu-card {
+    width: min(100%, 425px);
+    justify-self: center;
+  }
+
+  .product-picture {
+    margin-left: 1.5rem;
+  }
+}
+
 .menu-card {
   display: grid;
   grid-template-columns: 6rem minmax(0, 1fr);
