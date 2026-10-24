@@ -84,7 +84,7 @@ function renderMenuCard(product: Product, includePrice = true): HTMLButtonElemen
 
   const hint = document.createElement("span")
   hint.className = "product-hint"
-  hint.textContent = "Clique para ver descrição"
+  hint.textContent = "Clique para ver a descrição"
 
   const image = document.createElement("img")
   image.className = "product-picture"

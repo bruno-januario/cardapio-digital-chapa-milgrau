@@ -59,9 +59,9 @@
   gap: 1rem;
   min-height: 190px;
   padding: 1.25rem 1.1rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-lg);
-  background: linear-gradient(180deg, rgba(219, 52, 3, 0.12), rgba(3, 11, 14, 0.9));
+  background: linear-gradient(180deg, rgba(255, 61, 2, 0.199), rgba(2, 6, 7, 0.9));
   box-shadow: var(--shadow-soft);
   color: var(--title-light);
   text-align: right;
@@ -178,20 +178,20 @@
 }
 
 .product-price {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  color: var(--title-light);
+  color: var(--title-accent);
 }
 
 .single-price {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 3rem;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  min-height: 2.2rem;
+  padding-inline: 0.5rem;
+  border: 1px solid var(--title-accent);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.014);
 }
 
 .product-hint {
@@ -223,7 +223,8 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.5rem;
-  width: min(100%, 360px);
+  width: min(100%, 280px);
+  align-self: flex-start;
 }
 
 .soup-price-chip {
@@ -232,26 +233,25 @@
   align-items: center;
   justify-content: center;
   gap: 0.12rem;
-  min-height: 3.6rem;
   min-width: 0;
-  padding: 0.3rem 0.15rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.3rem 0rem;
+  border: 1px solid var(--title-accent);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.04);
 }
 
 .soup-price-label {
-  font-size: 0.56rem;
+  font-size: clamp(0.70rem, 2.8vw, 0.72rem);
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--title-accent);
 }
 
 .soup-price-value {
-  font-size: clamp(0.58rem, 2.8vw, 0.72rem);
+  font-size: clamp(0.75rem, 2.8vw, 0.72rem);
   font-weight: 700;
-  color: var(--title-light);
+  color: var(--title-accent);
   white-space: nowrap;
 }
 
