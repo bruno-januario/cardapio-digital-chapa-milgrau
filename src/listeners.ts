@@ -12,6 +12,24 @@ export function attachProductInteractions(): void {
     throw new Error("Não foi possível inicializar o modal de descrição.")
   }
 
+  const closeDialog = () => {
+    if (!dialog.open || dialog.classList.contains("is-closing")) {
+      return
+    }
+
+    dialog.classList.add("is-closing")
+  }
+
+  dialog.addEventListener("animationend", (event) => {
+    if (
+      event.target === dialog &&
+      event.animationName === "product-dialog-exit"
+    ) {
+      dialog.classList.remove("is-closing")
+      dialog.close()
+    }
+  })
+
   const cards = document.querySelectorAll<HTMLButtonElement>(".menu-card")
 
   cards.forEach((card) => {
@@ -24,17 +42,23 @@ export function attachProductInteractions(): void {
 
       title.textContent = name
       description.textContent = productDescription
+      dialog.classList.remove("is-closing")
       dialog.showModal()
     })
   })
 
   closeButton.addEventListener("click", () => {
-    dialog.close()
+    closeDialog()
   })
 
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) {
-      dialog.close()
+      closeDialog()
     }
+  })
+
+  dialog.addEventListener("cancel", (event) => {
+    event.preventDefault()
+    closeDialog()
   })
 }
