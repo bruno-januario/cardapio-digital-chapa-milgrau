@@ -4,7 +4,10 @@ import "./styles/menu.css"
 import "./styles/footer.css"
 
 import { beverages, fastFood, soapFood, type Product, type Soup } from "./data"
-import { attachProductInteractions } from "./listeners"
+import {
+  attachBackToTopInteraction,
+  attachProductInteractions
+} from "./listeners"
 
 const sectionConfigurations = [
   { key: "fast-food", items: fastFood },
@@ -131,3 +134,4 @@ for (const { key, items } of sectionConfigurations) {
 }
 
 attachProductInteractions()
+attachBackToTopInteraction()
