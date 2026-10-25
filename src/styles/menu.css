@@ -108,42 +108,30 @@
   background: var(--card-bg);
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
   color: var(--title-light);
-  transform: translateY(calc(50vh + 100%));
+  opacity: 0;
   transition:
-    transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 260ms ease,
     display 350ms allow-discrete,
     overlay 350ms allow-discrete;
 }
 
 .product-dialog[open] {
-  transform: translateY(0);
+  opacity: 1;
 }
 
 @starting-style {
   .product-dialog[open] {
-    transform: translateY(calc(50vh + 100%));
+    opacity: 0;
   }
 }
 
 .product-dialog.is-closing {
-  animation: product-dialog-exit 360ms cubic-bezier(0.55, 0, 1, 0.45) forwards;
+  animation: product-dialog-exit 360ms ease forwards;
 }
 
 @keyframes product-dialog-exit {
-  0% {
-    transform: translateY(0) scale(1);
-  }
-
-  12% {
-    transform: translateY(-1rem) scale(1.02);
-  }
-
-  24% {
-    transform: translateY(0) scale(1);
-  }
-
-  100% {
-    transform: translateY(calc(50vh + 100%)) scale(0.98);
+  to {
+    opacity: 0;
   }
 }
 
