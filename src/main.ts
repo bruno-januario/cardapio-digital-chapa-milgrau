@@ -1,8 +1,3 @@
-import "./styles/global.css"
-import "./styles/header.css"
-import "./styles/menu.css"
-import "./styles/footer.css"
-
 import { beverages, fastFood, soapFood, type Product, type Soup } from "./data"
 import {
   attachBackToTopInteraction,
