@@ -17,6 +17,7 @@
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -47,10 +48,6 @@ input,
 textarea,
 select {
   font: inherit;
-}
-
-button {
-  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
