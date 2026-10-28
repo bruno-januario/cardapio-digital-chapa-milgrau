@@ -116,7 +116,10 @@ function renderSection(sectionId: string, items: Product[]): void {
   if (sectionId === "soup") {
     sectionElement.classList.add("has-price-summary")
     const cards = items.map((item) => renderMenuCard(item, false))
-    sectionElement.replaceChildren(renderSoupPriceLegend(), ...cards)
+    const disclaimer = document.createElement("p")
+    disclaimer.className = "image-disclaimer"
+    disclaimer.textContent = "Todas as imagens do cardápio são meramente ilustrativas."
+    sectionElement.replaceChildren(renderSoupPriceLegend(), disclaimer, ...cards)
     return
   }
 

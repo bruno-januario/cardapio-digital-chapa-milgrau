@@ -25,6 +25,12 @@
   text-transform: uppercase;
 }
 
+.image-disclaimer {
+  margin: 0.35rem 0 0;
+  color: var(--muted-text);
+  font-size: 0.8rem;
+}
+
 .menu-section h2 {
   margin: 0;
   font-family: "Chicle", sans-serif;
@@ -257,6 +263,10 @@
   flex-direction: column;
   gap: 0.6rem;
   margin-bottom: 0.25rem;
+}
+
+.product-grid .image-disclaimer {
+  grid-column: 1 / -1;
 }
 
 .soup-price-title {
