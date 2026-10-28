@@ -7,7 +7,7 @@
   background-color: #111315;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
-    url("/images/header-bg-mobile.jpg");
+    url("../../public/images/header-bg-mobile.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -142,7 +142,7 @@
   .site-header {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
-      url("/images/header-bg-desktop.jpg");;
+      url("../../public/images/header-bg-desktop.jpg");
   }
 
   .header-content {
