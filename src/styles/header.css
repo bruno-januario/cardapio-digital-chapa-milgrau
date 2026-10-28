@@ -32,16 +32,35 @@
 }
 
 .brand-wrap {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  display: inline-block;
   width: clamp(150px, 25vw, 220px);
-  height: auto;
+  aspect-ratio: 1;
+  margin-bottom: 2rem;
 }
 
 .brand-logo {
   width: 100%;
   filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35));
+}
+
+.logo-slogan {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  width: 127.3%;
+  height: 127.3%;
+  overflow: visible;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.logo-slogan text {
+  fill: #fff3dd;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
 }
 
 .header-tagline {
