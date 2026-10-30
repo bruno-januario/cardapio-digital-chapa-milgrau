@@ -17,43 +17,43 @@ export const fastFood: Product[] = [
         name: 'X-Tudo',
         description: 'Pão, carne, queijo, presunto, bacon, ovo, tomate, alface, milho, ervilha, batata palha, queijo ralado, ketchup, maionese, molho verde e mostarda.',
         picture: './images/fast-food/xtudo.webp',
-        price: 12
+        price: 13
     },
     {
         name: 'X-Picanha',
         description: 'Pão, carne de picanha, queijo, presunto, bacon, ovo, tomate, alface, milho, ervilha, batata palha, queijo ralado, ketchup, maionese, molho verde e mostarda.',
         picture: './images/fast-food/xpicanha.webp',
-        price: 18
+        price: 19
     },
     {
         name: 'X-Bacon',
         description: 'Pão, carne, queijo, presunto, 4x mais bacon que o X-Tudo, ovo, tomate, alface, milho, ervilha, batata palha, queijo ralado, ketchup, maionese, molho verde e mostarda.',
         picture: './images/fast-food/xbacon.webp',
-        price: 20
+        price: 22
     },
     {
         name: 'X-Duplo',
         description: 'Pão, 2 carnes, 2 queijos, 2 presuntos, 2x mais bacon que o X-Tudo, tomate, alface, milho, ervilha, batata palha, queijo ralado, ketchup, maionese, molho verde e mostarda.',
         picture: './images/fast-food/xduplo.webp',
-        price: 20
+        price: 22
     },
     {
         name: 'Hot-Dog Linguiça',
         description: 'Pão, molho e caldo, linguiça, alface, milho, ervilha, ovo de codorna, azeitona, batata palha, queijo ralado, ketchup, maionese, molho verde e mostarda.',
         picture: './images/fast-food/hotdoglinguica.webp',
-        price: 12
+        price: 13
     },
     {
         name: 'Hot-Dog Salsicha',
         description: 'Pão, molho e caldo, 2 salsichas, alface, milho, ervilha, ovo de codorna, azeitona, batata palha, queijo ralado, ketchup, maionese, molho verde e mostarda.',
         picture: './images/fast-food/hotdogsalsicha.webp',
-        price: 12
+        price: 13
     },
     {
         name: 'Hambúrguer (Kids)',
         description: 'Pão, carne, queijo, presunto, batata palha e ketchup.',
         picture: './images/fast-food/hamburguerkids.webp',
-        price: 9
+        price: 10
     }
 ]
 
